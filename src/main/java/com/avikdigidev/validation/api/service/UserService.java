@@ -4,6 +4,7 @@ import com.avikdigidev.validation.api.entity.User;
 import com.avikdigidev.validation.api.dto.UserRequest;
 import com.avikdigidev.validation.api.exception.UserNotFoundException;
 import com.avikdigidev.validation.api.repository.UserRepository;
+import com.avikdigidev.validation.api.utils.ValidUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,7 +35,7 @@ public class UserService {
         if(user!=null){
             return user;
         }else{
-            throw new UserNotFoundException("user not found with id : "+id);
+            throw new UserNotFoundException(ValidUtils.SV001, ValidUtils.SV001_MESSAGE);
         }
     }
 }
