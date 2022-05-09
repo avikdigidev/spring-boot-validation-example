@@ -1,13 +1,13 @@
-package com.avikdigidev.validation;
+package com.avikdigidev.validation.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootValidationExampleApplication {
+public class ValidationExampleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootValidationExampleApplication.class, args);
+		SpringApplication.run(ValidationExampleApplication.class, args);
 	}
 
 }
